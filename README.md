@@ -1,21 +1,28 @@
-# Hello World Python Example
+# Hello World Java Example
 
-This repository contains a minimal Python program that prints `Hello, World!`.
+This repository contains a minimal Maven-based Java program that prints `Hello, World!`.
 
 ## Files
 
-- `hello.py`: Prints `Hello, World!` to the console.
+- `pom.xml`: Minimal Maven project configuration for Java 17.
+- `src/main/java/Main.java`: Prints `Hello, World!` to the console.
 
 ## Run
 
-Use Python to run the program:
+Compile the program with Maven:
 
 ```bash
-python hello.py
+mvn compile
 ```
 
-If your system uses Python 3 explicitly, run:
+Run it with Maven:
 
 ```bash
-python3 hello.py
+mvn exec:java
+```
+
+Or run the compiled class directly:
+
+```bash
+java -cp target/classes Main
 ```
